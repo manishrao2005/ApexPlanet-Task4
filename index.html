@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish | ApexPlanet Task 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h1>Manish</h1>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#todo">To-Do</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div>
+            <h2>Welcome to My Portfolio</h2>
+
+            <p>
+                Web Development Intern at ApexPlanet Software Pvt. Ltd.
+            </p>
+
+            <p>
+                This website demonstrates HTML, CSS and JavaScript
+                skills developed during my internship.
+            </p>
+
+            <a href="#projects" class="hero-button">View My Projects</a>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+
+            <p>
+                I am Manish, a web development intern interested in
+                creating responsive and interactive websites using
+                HTML, CSS and JavaScript.
+            </p>
+
+            <div class="skills">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <h3>Task 1</h3>
+                    <p>
+                        A basic webpage created using HTML, CSS
+                        and JavaScript.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Task 2</h3>
+                    <p>
+                        A responsive website with contact form
+                        validation and a dynamic To-Do List.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Task 3</h3>
+                    <p>
+                        An advanced JavaScript project containing
+                        an interactive quiz and API integration.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- To-Do App -->
+        <section id="todo" class="section">
+            <h2>📝 To-Do List</h2>
+
+            <p class="section-description">
+                Add tasks below. Your tasks are saved using
+                browser localStorage.
+            </p>
+
+            <div class="todo-box">
+
+                <div class="todo-input">
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="Enter a task"
+                    >
+
+                    <button id="addTask">
+                        Add Task
+                    </button>
+                </div>
+
+                <ul id="taskList"></ul>
+
+            </div>
+        </section>
+
+        <!-- Product Listing -->
+        <section id="products" class="section">
+            <h2>🛍️ Product Listing</h2>
+
+            <div class="product-controls">
+
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="phone">Phone</option>
+                    <option value="accessory">Accessory</option>
+                </select>
+
+                <select id="sortProducts">
+                    <option value="default">Sort Products</option>
+                    <option value="low-high">Price: Low to High</option>
+                    <option value="high-low">Price: High to Low</option>
+                    <option value="rating">Rating: High to Low</option>
+                </select>
+
+            </div>
+
+            <div id="productList" class="product-grid"></div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h2>📧 Contact Me</h2>
+
+            <form id="contactForm">
+
+                <label for="name">Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    placeholder="Enter your message"
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Manish | ApexPlanet Web Development Internship - Task 4
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

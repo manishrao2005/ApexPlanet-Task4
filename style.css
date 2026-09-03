@@ -1,0 +1,28 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f4f7fb;color:#333}
+header{background:#0f766e;color:#fff;position:sticky;top:0}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 8%;flex-wrap:wrap}
+.nav-links{display:flex;gap:15px;flex-wrap:wrap}
+.nav-links a{color:#fff;text-decoration:none}
+.hero{background:linear-gradient(135deg,#0f766e,#14b8a6);color:#fff;text-align:center;padding:70px 20px}
+.hero-button{display:inline-block;margin-top:20px;background:#fff;color:#0f766e;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold}
+.section{padding:50px 8%}
+.section h2{text-align:center;margin-bottom:20px;color:#0f766e}
+.skills{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.skills span{background:#0f766e;color:#fff;padding:8px 14px;border-radius:20px}
+.project-grid,.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.project-card,.todo-box,.product-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.1)}
+.todo-input{display:flex;gap:10px;margin-bottom:20px}
+input,textarea,select{width:100%;padding:10px;border:1px solid #ccc;border-radius:8px}
+button{background:#0f766e;color:#fff;border:none;padding:10px 18px;border-radius:8px;cursor:pointer}
+button:hover{background:#115e59}
+#taskList{list-style:none}
+#taskList li{display:flex;justify-content:space-between;background:#e6fffb;padding:10px;border-radius:8px;margin-bottom:10px}
+.product-controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+.product-card h3{color:#0f766e}
+footer{text-align:center;background:#0f766e;color:#fff;padding:20px;margin-top:30px}
+@media(max-width:768px){
+.navbar{flex-direction:column}
+.todo-input{flex-direction:column}
+.hero h2{font-size:28px}
+}
